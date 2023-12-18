@@ -67,7 +67,7 @@ function displayFunc(arr){
 form.addEventListener("submit", (e)=>{
     e.preventDefault()
     lodingFunc()
-    fetch(`http://www.omdbapi.com/?s=${search.value}&apikey=${key}`).then((res)=>res.json()).then((res)=>{
+    fetch(`https://www.omdbapi.com/?s=${search.value}&apikey=${key}`).then((res)=>res.json()).then((res)=>{
         displayFunc(res.Search);
     });
 });
