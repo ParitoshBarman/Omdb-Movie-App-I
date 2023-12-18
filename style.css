@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    min-height: 100px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main {
+    margin-top: 30px;
+}
+
+form {
+    text-align: center;
+
+}
+
+form>input {
+    font-size: x-large;
+    padding: 10px 25px;
+
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.63);
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 255, 0.452);
+}
+
+
+#moviedetails {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#loding {
+    text-align: center;
+    margin: auto;
+}
+
+#loding h1 {
+    color: #333;
+}
+
+.loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Fail {
+    margin: auto;
+}
+
+#Fail h1,
+i {
+    color: #FF4500;
+    font-size: 30px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#moviedetails {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 35px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#moviedetails>div {
+    height: 200px;
+    min-width: 500px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#moviedetails>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#moviedetails>div img {
+    height: 100%;
+}
+
+#moviedetails>div:first-child {
+    height: 90%;
+}
+
+#moviedetails>div:first-child {
+    width: 100%;
+
+}
+
+#moviedetails>h2 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:600px) {
+    #moviedetails>div {
+        height: 200px;
+        min-width: 50%;
+        width: 90%;
+    }
+
+    #moviedetails>div:first-child {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #moviedetails>div:first-child>div:last-child {
+        align-items: center;
+        margin: 15px 0;
+        gap: 10px;
+    }
+
+    form>input[type="submit"] {
+        margin-top: 15px;
+    }
+}
+
+footer {
+    margin-top: 100px;
+    height: 200px;
+    background-color: blueviolet;
+    color: yellow;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
