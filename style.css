@@ -162,6 +162,9 @@ i {
     form>input[type="submit"] {
         margin-top: 15px;
     }
+    form>input[type="search"] {
+        width: 97%;
+    }
 }
 
 footer {
