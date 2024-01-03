@@ -141,6 +141,29 @@ i {
 }
 
 
+#searchresults{
+    text-align: left;
+    width: 470px;
+    margin: auto;
+    max-width: 95%;
+}
+#searchresults>div{
+    height: 50px;
+    border: 1px solid gray;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+#searchresults>div:hover{
+    background-color: rgba(137, 43, 226, 0.428);
+}
+#searchresults>div>img{
+    max-height: 99%;
+}
+
 @media screen and (max-width:600px) {
     #moviedetails>div {
         height: 200px;
